@@ -26,3 +26,9 @@ rails db:migrate
 ```bash
 rails s
 ```
+
+## コマンドメモ
+```bash
+# プロジェクト作成
+rails new . --api --database=postgresql --skip-webpack-install --skip-javascript --skip-test
+```
