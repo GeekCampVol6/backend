@@ -1,24 +1,28 @@
-# README
+# Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 環境構築
 
-Things you may want to cover:
+.envファイルを作成して以下のようにしてください
+```
+POSTGRES_USERNAME=postgres
+POSTGRES_PASSWORD=<自身のpgAdminに入るときのパスワード>
+POSTGRES_DATABASE_NAME=Tech_Calendar
+```
 
-* Ruby version
+### パッケージインストール
+```bash
+bundle install
+```
 
-* System dependencies
+### データベース作成
+pgAdminにてTech_Calendarというデータベースを作成してください
 
-* Configuration
+### マイグレーション
+```bash
+rails db:migrate
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### サーバー起動
+```bash
+rails s
+```
